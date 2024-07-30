@@ -1,7 +1,7 @@
 
 var cur_page = 0, height = 3, end_page = 0;
 var downsample_level = 1;
-var ip = "http://hkust-vgd.ust.hk";
+var ip = "https://martinbchnr.github.io/ovsg";
 var xmlPathPattern = ip + "/scenenn/main/@id/@id.xml";
 var plyPathPattern = ip + "/scenenn/downsample/@id/@id-" + downsample_level + ".ply";
 
@@ -145,7 +145,7 @@ function parseSceneXML(){
     var scene_type = [];
     var scene_type_map = new Map();
     var rawFile = new XMLHttpRequest();
-    rawFile.open("GET", ip + "/scenenn/main/category.csv", false);
+    rawFile.open("GET", ip + "/scenenn/webgl/category.csv", false);
     rawFile.onload = function ()
     {
         if(rawFile.readyState === 4)

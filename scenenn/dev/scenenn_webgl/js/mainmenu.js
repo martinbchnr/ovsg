@@ -143,6 +143,7 @@ function parseSceneXML(){
     var scene_type_map = new Map();
     var rawFile = new XMLHttpRequest();
     rawFile.open("GET", ip + "/scenenn/main/category.csv", false);
+    
     rawFile.onload = function ()
     {
         if(rawFile.readyState === 4)
