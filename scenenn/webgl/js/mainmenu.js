@@ -5,6 +5,9 @@ var ip = "http://hkust-vgd.ust.hk";
 var xmlPathPattern = ip + "/scenenn/main/@id/@id.xml";
 var plyPathPattern = ip + "/scenenn/downsample/@id/@id-" + downsample_level + ".ply";
 
+document.write(xmlPathPattern);
+document.write(plyPathPattern);
+
 function show_category(){
     var scene_data = parseSceneXML();
     var scene_type = scene_data.scene_type;
